@@ -1,0 +1,27 @@
+body {
+    background-color:black;
+    background-image: url(images/background\ image.jpg);
+    background-size: auto; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+h2 {
+    color: rgba(204, 203, 200, 0.918);
+}
+
+h1 {color: rgba(204, 203, 200, 0.918); }
+
+figcaption{ 
+    color:honeydew;
+}
+
+p{ 
+  color:honeydew;
+}
+
+footer{ 
+    color: rgba(204, 203, 200, 0.918);
+
+}
