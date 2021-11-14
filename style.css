@@ -5,21 +5,97 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin:0;
 }
+
+
+
+#split {
+
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  flex: 1 0 60%; 
+  padding: 0 1rem;
+  margin:0;
+
+}
+
+nav ul {color: rgba(204, 203, 200, 0.918); 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    list-style: none;
+    padding:0;
+    display:flex;
+    justify-content:flex-end;
+    align-items: center; 
+
+}
+nav { 
+    flex: 0 1 40%; 
+}
+
+a:hover { background-color: rgb(235, 159, 206);
+    color: rgb(49, 2, 30);
+    padding: 15px; 
+}
+
+
+/* i want to make these boxes nicer, not so tall and hover to fit box */
+nav li {
+    border: 3px solid rgba(204, 203, 200, 0.918);
+    background-color: black;
+    padding: 5px;
+    margin: 5px;
+    color:rgba(204, 203, 200, 0.918);
+    text-decoration: none;
+   }
+
 
 h2 {
     color: rgba(204, 203, 200, 0.918);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
 }
 
-h1 {color: rgba(204, 203, 200, 0.918); }
-
+h1 {color: rgba(204, 203, 200, 0.918); 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 4rem;
+}
+ul {  font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 3rem;
+    list-style:none;
+    color:honeydew;
+    
+}
 figcaption{ 
     color:honeydew;
 }
 
 p{ 
   color:honeydew;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.75rem;
 }
+
+.contact-info{ 
+    color:honeydew;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 1.75rem;
+
+}
+
 
 footer{ 
     color: rgba(204, 203, 200, 0.918);
