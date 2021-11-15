@@ -79,20 +79,17 @@ h2 {
 h1 {color: rgba(204, 203, 200, 0.918); 
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
-    font-size: 4rem;
-}
-ul {  font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 3rem;
-    list-style:none;
-    color:honeydew;
+    font-size: 3rem;
+   
     
 }
+
 figcaption{ 
     color:honeydew;
 }
 
+/* about us section start */ 
+/* would like the image to span 80% of the width of page and paragraph to fit nicely - playing around with */
 p{ 
   color:honeydew;
   font-family: 'Open Sans', sans-serif;
@@ -102,6 +99,37 @@ p{
  
 }
 
+ .container { 
+    position: relative;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+
+    
+}
+
+.top-left {
+    position:absolute;
+    top:20px;
+    left:70px;
+    display:flex;
+    flex-wrap: wrap;
+    width: 750px;
+    
+}
+
+/* about us section end */ 
+
+/* not responsive friendly on the border box need to fix */
+.salonpics { 
+    display:flex;
+    flex-wrap:nowrap;
+    flex-direction: row;
+    border-radius: 25px;
+    border: 2px solid rgba(204, 203, 200, 0.918);
+    position: relative;
+  
+}
 .contact-info{ 
     color:honeydew;
     font-family: 'Roboto', sans-serif;
@@ -109,6 +137,50 @@ p{
     font-size: 1.75rem;
 
 }
+
+
+/*services page*/
+
+.pricelist{ 
+    display:flex;
+    flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.hairservice {
+    flex:1;
+}
+
+.nailservice {
+    flex:2;
+}
+
+.browservice {
+    flex:3
+}
+
+.moreservice {
+    flex:4;
+}
+
+.products {
+    display: flex;
+    flex-direction:row;
+    align-items: flex-end;
+}
+
+ .pricelist ul {  font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 3rem;
+        list-style:none;
+        color:honeydew;
+        text-decoration: underline;
+        
+    }
+
+
 /* footer start */ 
 /*want to move contact us to right and rest to end tried and can't get yet */ 
 footer .wrapper { 
