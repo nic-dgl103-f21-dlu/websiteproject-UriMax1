@@ -99,28 +99,20 @@ p{
  
 }
 
- .container { 
+
+.about {
+    border-radius:25px;
+    border: 2px solid rgba(204, 203, 200, 0.918);
     position: relative;
-    text-align: left;
-    display: flex;
-    flex-wrap: wrap;
-
-    
+    margin: 40px;
+    padding: 15px;
 }
-
-.top-left {
-    position:absolute;
-    top:20px;
-    left:70px;
-    display:flex;
-    flex-wrap: wrap;
-    width: 750px;
-    
+.our-salon {
+    text-indent: 55px;
 }
-
 /* about us section end */ 
 
-/* not responsive friendly on the border box need to fix */
+/* not responsive friendly on the border box need to fix - dont like scroll bar */
 .salonpics { 
     display:flex;
     flex-wrap:nowrap;
@@ -128,6 +120,8 @@ p{
     border-radius: 25px;
     border: 2px solid rgba(204, 203, 200, 0.918);
     position: relative;
+    overflow:auto;
+    margin:40px;
   
 }
 .contact-info{ 
@@ -140,46 +134,115 @@ p{
 
 
 /*services page*/
-
+/* need to fit better within page? start and end borders not visible */
 .pricelist{ 
     display:flex;
     flex-direction: row;
-  justify-content: space-around;
+    justify-content: space-around;
+    gap: 10px;
+
+   
 
 }
 
 .hairservice {
     flex:1;
+    border-radius:25px;
+    border: 2px solid rgba(204, 203, 200, 0.918);
+    position: relative;
+   
 }
 
 .nailservice {
-    flex:2;
+    flex:1;
+    border-radius:25px;
+    border: 2px solid rgba(204, 203, 200, 0.918);
+    position: relative;
+  
 }
 
 .browservice {
-    flex:3
+    flex:1;
+    border-radius: 25px;
+    border: 2px solid rgba(204, 203, 200, 0.918);
+    position: relative;
+    
 }
 
 .moreservice {
-    flex:4;
+    flex:1;
+    border-radius:25px;
+    border: 2px solid rgba(204, 203, 200, 0.918);
+    position: relative;
+   
 }
 
 .products {
     display: flex;
     flex-direction:row;
     align-items: flex-end;
+    border-radius:25px;
+    border: 2px solid rgba(204, 203, 200, 0.918);
+    position: relative;
 }
 
  .pricelist ul {  font-family: 'Roboto', sans-serif;
         font-weight: 400;
-        font-size: 1rem;
+        font-size: 1.3rem;
         line-height: 3rem;
         list-style:none;
-        color:honeydew;
-        text-decoration: underline;
+        color:rgba(204, 203, 200, 0.918);
+        text-decoration:underline;
         
     }
+/*services page end*/
 
+/*our team page start*/ 
+
+/*how to get the image to left and text to right*/ 
+.team-photo { 
+    text-align: center;
+}
+
+body.team h1 { text-decoration: underline;}
+
+body.team figcaption { font-size: 1rem;}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+       
+}
+
+
+.chloe { 
+   
+    flex:1;
+    border-radius:25px;
+    border: 2px solid rgba(204, 203, 200, 0.918);
+    position: relative;
+    margin: 10px;
+    padding: 5px; 
+    
+}
+
+/*why wont lannies border radius show*/
+.lannie {
+    flex:1;
+    border-radius:25px;
+    border: 2px solid rgba(204, 203, 200, 0.918);
+    position: relative;
+    margin: 10px;
+ }
+
+.sophia {
+    flex:1;
+    border-radius:25px;
+    border: 2px solid rgba(204, 203, 200, 0.918);
+    position: relative;
+    margin: 10px;
+ }
 
 /* footer start */ 
 /*want to move contact us to right and rest to end tried and can't get yet */ 
