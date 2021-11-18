@@ -74,12 +74,14 @@ h2 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 3rem;
+    text-indent: 55px;
 }
 
 h1 {color: rgba(204, 203, 200, 0.918); 
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
     font-size: 3rem;
+    text-indent: 55px;
    
     
 }
@@ -132,14 +134,40 @@ p{
 
 }
 
+.contact-info ul {
+    display: flex;
+    flex-wrap:nowrap;
+    flex-direction: row;
+    border-radius: 25px;
+    border: 2px solid rgba(204, 203, 200, 0.918);
+    position: relative;
+    margin:40px;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.contact-info li {
+    padding: 15px;
+    margin:10px;
+    flex: 1;
+}
 
 /*services page*/
 /* need to fit better within page? start and end borders not visible */
+
+body.services h1 { 
+    text-decoration: underline;
+}
+
+
 .pricelist{ 
     display:flex;
     flex-direction: row;
     justify-content: space-around;
     gap: 10px;
+  
 
    
 
@@ -150,6 +178,7 @@ p{
     border-radius:25px;
     border: 2px solid rgba(204, 203, 200, 0.918);
     position: relative;
+ 
    
 }
 
@@ -158,6 +187,7 @@ p{
     border-radius:25px;
     border: 2px solid rgba(204, 203, 200, 0.918);
     position: relative;
+   
   
 }
 
@@ -184,6 +214,8 @@ p{
     border-radius:25px;
     border: 2px solid rgba(204, 203, 200, 0.918);
     position: relative;
+    margin: 10px;
+    padding: 5px; 
 }
 
  .pricelist ul {  font-family: 'Roboto', sans-serif;
@@ -243,6 +275,78 @@ body.team figcaption { font-size: 1rem;}
     position: relative;
     margin: 10px;
  }
+/*our team page end*/ 
+
+
+/* portfolio page start*/
+
+body.portfolio figcaption {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+body.portfolio h2 {
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+.hair {
+    display: flex;
+    border-radius:25px;
+    border: 2px solid rgba(204, 203, 200, 0.918);
+    position: relative;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.nails { 
+    display: flex;
+    border-radius:25px;
+    border: 2px solid rgba(204, 203, 200, 0.918);
+    position: relative;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+
+.brows { 
+    display: flex;
+    border-radius:25px;
+    border: 2px solid rgba(204, 203, 200, 0.918);
+    position: relative;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+
+.testimonials ul {
+    flex-direction: row;   
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    
+    
+}
+.testimonials li {
+    border-radius:25px;
+    border: 2px solid rgba(204, 203, 200, 0.918);
+    position: relative;
+    color:rgba(204, 203, 200, 0.918);
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.2rem;
+    flex:1;
+
+    
+     
+}
+
+
+
+
+
+
+
 
 /* footer start */ 
 /*want to move contact us to right and rest to end tried and can't get yet */ 
