@@ -12,7 +12,7 @@ body {
     margin:0;
 }
 
-/*ask claire how to fix the nav styles */
+/*ask claire how to fix the nav styles -adjusted - now find that i cannot figure out how to move nav li to the far left*/
 /* nav start */ 
 #split {
 
@@ -37,9 +37,11 @@ nav ul {color: rgba(204, 203, 200, 0.918);
     background-color: rgb(49, 2, 30);
    opacity: 60%;
    display:flex;
+   margin:auto;
+
   
 }
-/*i want to shift nav to sit on top of border - need to figure out */
+/*i want to shift nav to sit on top of border - need to figure out - done */
 nav { 
     flex: 0 1 40%; 
 }
@@ -51,11 +53,11 @@ a:hover { background-color: rgb(235, 159, 206);
     border:3px solid;
 }
 
-/* i want to make these boxes nicer, not so tall and hover to fit box */
+
 nav li {
 
     padding: 5px;
-    margin: 5px;
+    margin-bottom: 0;
     color:rgba(204, 203, 200, 0.918);
     text-decoration: none;
  
@@ -135,23 +137,18 @@ p{
 }
 
 .contact-info ul {
-    display: flex;
-    flex-wrap:nowrap;
-    flex-direction: row;
     border-radius: 25px;
     border: 2px solid rgba(204, 203, 200, 0.918);
-    position: relative;
     margin:40px;
     list-style: none;
-    justify-content: space-between;
-    align-items: center;
+    
     
 }
 
 .contact-info li {
     padding: 15px;
     margin:10px;
-    flex: 1;
+   
 }
 
 /*services page*/
@@ -166,18 +163,19 @@ body.services h1 {
     display:flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 10px;
-  
-
+    gap:10px;
    
 
 }
 
+.pricelist img {
+    width:100%;
+}
 .hairservice {
     flex:1;
     border-radius:25px;
     border: 2px solid rgba(204, 203, 200, 0.918);
-    position: relative;
+  
  
    
 }
@@ -186,7 +184,7 @@ body.services h1 {
     flex:1;
     border-radius:25px;
     border: 2px solid rgba(204, 203, 200, 0.918);
-    position: relative;
+
    
   
 }
@@ -195,7 +193,7 @@ body.services h1 {
     flex:1;
     border-radius: 25px;
     border: 2px solid rgba(204, 203, 200, 0.918);
-    position: relative;
+  
     
 }
 
@@ -203,7 +201,7 @@ body.services h1 {
     flex:1;
     border-radius:25px;
     border: 2px solid rgba(204, 203, 200, 0.918);
-    position: relative;
+ 
    
 }
 
@@ -213,7 +211,6 @@ body.services h1 {
     align-items: flex-end;
     border-radius:25px;
     border: 2px solid rgba(204, 203, 200, 0.918);
-    position: relative;
     margin: 10px;
     padding: 5px; 
 }
@@ -227,6 +224,105 @@ body.services h1 {
         text-decoration:underline;
         
     }
+   
+    .wrapper-form {
+        border-radius: 5px;
+        color:rgba(204, 203, 200, 0.918);
+        padding: 20px;
+     
+        margin: 0 auto;
+        border: 2px solid rgba(204, 203, 200, 0.918);
+        display:flex;
+      }
+
+      .wrapper-button {
+        display: flex;
+        justify-content:flex-end;
+        gap: 25px;
+      }
+      
+      input[type="submit"] {
+        background-color: rgb(235, 159, 206);
+        color: rgb(49, 2, 30);
+        padding: 12px 20px;
+        border: 1px solid rgb(49, 2, 30);
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: rgb(49, 2, 30);
+        color:rgba(204, 203, 200, 0.918);
+      }
+      
+
+      input[type="reset"] {
+        color: rgb(49, 2, 30);
+        padding: 12px 20px;
+        border: 1px solid rgb(49, 2, 30);
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type="reset"]:hover {
+        background-color: rgb(49, 2, 30);
+        color:rgba(204, 203, 200, 0.918);
+      }
+      
+      input,
+      select,
+      textarea {
+          font-size: 0.6em;
+      }
+
+
+      input[type="text"],
+      textarea
+     
+      
+       {
+      
+        padding: 4px;
+        border: 2px solid rgb(235, 159, 206);
+        border-radius: 4px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        resize: vertical;
+      }
+      
+      input[type="email"] {
+       
+        padding: 4px;
+        border: 1px solid rgb(49, 2, 30);
+        border-radius: 4px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        resize: vertical;
+      }
+      
+      textarea {
+        font-family: sans-serif;
+      }
+      
+      fieldset {
+        margin-bottom: 16px;
+        border: 1px solid #ccc;
+      }
+      
+      .label-required {
+        font-size: 0.8rem;
+        color: rgb(235, 159, 206);
+      }
+
+label {
+    color:rgba(204, 203, 200, 0.918);
+    
+    width:150px;
+    
+}
+
+
+
+
+
 /*services page end*/
 
 /*our team page start*/ 
@@ -238,18 +334,25 @@ body.services h1 {
 
 body.team h1 { text-decoration: underline;}
 
-body.team figcaption { font-size: 1rem;}
+.team p {
+    font-size: 1.5rem;
+    text-align:justify;
+}
 
 .team {
-    display: flex;
-    flex-direction: column;
+  
     gap: 20px;
        
 }
 
+.team figcaption {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-align: left;
+}
 
 .chloe { 
-   
+   display: flex;
     flex:1;
     border-radius:25px;
     border: 2px solid rgba(204, 203, 200, 0.918);
@@ -261,6 +364,7 @@ body.team figcaption { font-size: 1rem;}
 
 /*why wont lannies border show*/
 .lannie {
+    display: flex;
     flex:1;
     border-radius:25px;
     border: 2px solid rgba(204, 203, 200, 0.918);
@@ -269,6 +373,7 @@ body.team figcaption { font-size: 1rem;}
  }
 
 .sophia {
+    display: flex;
     flex:1;
     border-radius:25px;
     border: 2px solid rgba(204, 203, 200, 0.918);
@@ -322,14 +427,14 @@ body.portfolio h2 {
     flex-direction: row;   
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-start;
+ 
     
     
 }
 .testimonials li {
     border-radius:25px;
     border: 2px solid rgba(204, 203, 200, 0.918);
-    position: relative;
+  
     color:rgba(204, 203, 200, 0.918);
     list-style: none;
     padding: 10px;
@@ -369,3 +474,37 @@ footer ul {
     
 }
 /* footer end */ 
+
+
+@media only screen and (min-width: 1000px) {
+    
+    .contact-info ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    
+    .contact-info li {
+        flex: 1;
+    }
+    
+  }
+/* email still doesnt fit for moblie */
+  @media only screen and (max-width: 700px) {
+    
+    .contact-info ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: .8rem;
+       
+        
+    }
+    
+    .contact-info li {
+        flex: 1;
+        
+    }
+    
+  }
