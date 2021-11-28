@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&family=Roboto:wght@300;400;900&display=swap" rel="stylesheet"> <!--google font add-->
-
-</head>
-<body class="portfolio">
-    <nav> 
-        <a href="home.html"> Home </a>
-        <a href="services.html"> Services </a>
-        <a href="Team.html"> Team </a>
-        <a href="portfolio.html"> Portfolio </a>
-    </nav>   
-  <h1> Our Creations</h1>  
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&family=Roboto:wght@300;400;900&display=swap" rel="stylesheet"> <!--google font add-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body> 
+    <header id="split"> 
+        <div class="branding"> 
+        <figure> <img src="images/logo.jpg" alt="Cuttin Corners Logo" width="550"> </figure>
+    </div>
+    
+        <nav> 
+            <div class="menu-items">Menu</div>
+            <ul id="nav-items"> 
+           <li><a href="home.html"> Home </a> </li>
+           <li><a href="services.html"> Services </a> </li>
+           <li><a href="Team.html"> Team </a> </li>
+           <li><a href="portfolio.html"> Portfolio </a> </li>
+          
+        </ul>
+        <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a>
+    
+        </nav> 
+    
+    </header> 
+<div class="portfolio">
+ 
+   
    
   
-<h2> Hair</h2>
+  <h2> Hair </h2>
 <div class="hair"> 
 <figure> <img src="images/port-hair1.jfif" alt="Hair" width="200"> <figcaption> Stylist: Chloe Simms Jan 2020 </figcaption> </figure>
 <figure> <img src="images/port-hair2.jfif" alt="Hair" width="200"> <figcaption> Stylist: Lannie Brown Oct 2021 </figcaption> </figure>
@@ -29,7 +44,7 @@
 <figure> <img src="images/port-hair4.jfif" alt="Hair" width="200"> <figcaption> Stylist: Sophia Gardenia Apr 2021 </figcaption> </figure>
 </div>
 
-<h2> Nails</h2>
+<h2> Nails </h2>
 <div class=" nails"> 
 <figure> <img src="images/port-nails1.jpg" alt="3ails" width="200"> <figcaption> Stylist: Sophia Gardenia July 2021 </figcaption> </figure>
 <figure> <img src="images/port-nails2.jpg" alt="Nails" width="200"> <figcaption> Stylist: Lannie Brown Nov 2021 </figcaption> </figure>
@@ -37,7 +52,7 @@
 <figure> <img src="images/port-nails4.jpg" alt="Nails" width="200"> <figcaption> Stylist: Lannie Brown Sept 2021 </figcaption> </figure>
 </div>
 
-<h2> Brows, Lashes & Makeup</h2>
+<h2> Brows, Lashes & Makeup </h2>
 <div class="brows"> 
 <figure> <img src="images/port-brows1.jpg" alt="Brows" width="200"> <figcaption> Stylist: Lannie Brown Oct 2021 </figcaption> </figure>
 <figure> <img src="images/port-makeup1.jfif" alt="Makeup" width="200"> <figcaption> Stylist: Chloe Simms Nov 2021 </figcaption> </figure>
@@ -47,7 +62,7 @@
 
 
 
-<h2> Testimonials</h2>
+<h2> Testimonials </h2>
 
 <div class="testimonials"> 
 
@@ -63,24 +78,42 @@
 
 </ul>
 </div>
+</div>
 
 <footer> 
     <div class="wrapper">
    
     <!-- need to figure out html and coding for footer as well as styling-->
-  
-    
+   
      <ul> 
-    <li>  Phone </li> 
-    <li> Email </li>
-    <li> Address </li> 
-    <!-- need to insert logo links and style-->
-<a href="https://www.facebook.com/Cuttin-Corners-hair-salon-1847674388625506/services/?ref=page_internal">facebook</a> 
-<a href="https://instagram.com/cuttincornersstettler?utm_medium=copy_link">instagram</a>
-
+    <li>  403-742-0007 </li> 
+    <li> cuttincornerstettler@gmail.com </li> 
+    <li> 4839 50 Stettler, AB Canada </li>  
 </ul>
+
+    <!-- need to insert logo links and style-->
+  <div class="social"> 
+<a class="social-icon" href="https://www.facebook.com/Cuttin-Corners-hair-salon-1847674388625506/services/?ref=page_internal"> <ion-icon name="logo-facebook"></ion-icon></a>
+
+<a class="social-icon" href="https://instagram.com/cuttincornersstettler?utm_medium=copy_link"><ion-icon name="logo-instagram"></ion-icon></a>
+
 </div>
+
+
+</div>
+<p> This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the class environment. None of the content and images were approved by the business owner</p>
 </footer>
+<!--had some challenges fitting paragraph in settled on under the footer background-->
+
+<script>
+    function showNav() {
+      var element = document.getElementById("nav-items");
+      element.classList.toggle("show-items");
+    }
+  </script> 
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   
 
 </body>
 </html>

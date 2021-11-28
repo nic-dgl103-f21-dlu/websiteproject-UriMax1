@@ -1,3 +1,10 @@
+* {
+    box-sizing: border-box;
+  }
+
+
+
+
 body {
     background-color:black;
     background-image: url(images/background\ image.jpg);
@@ -38,6 +45,8 @@ nav ul {color: rgba(204, 203, 200, 0.918);
    opacity: 60%;
    display:flex;
    margin:auto;
+  
+ 
 
   
 }
@@ -58,14 +67,22 @@ nav li {
 
     padding: 5px;
     margin-bottom: 0;
+    margin-left:auto;
     color:rgba(204, 203, 200, 0.918);
     text-decoration: none;
  
    }
+
+nav a {
+    color:rgba(204, 203, 200, 0.918);
+    text-decoration: none;
+}
+
+
 /* nav end */ 
 
 
-body.home h1 {
+h1 {
     text-decoration: underline;
     
 
@@ -110,13 +127,16 @@ p{
     position: relative;
     margin: 40px;
     padding: 15px;
+
+
+
 }
 .our-salon {
     text-indent: 55px;
 }
 /* about us section end */ 
 
-/* not responsive friendly on the border box need to fix - dont like scroll bar */
+/* not responsive friendly on the border box need to fix - dont like scroll bar added google map - not responsive with contact box in flex*/
 .salonpics { 
     display:flex;
     flex-wrap:nowrap;
@@ -133,6 +153,8 @@ p{
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 1.75rem;
+    display: flex;
+    
 
 }
 
@@ -141,6 +163,9 @@ p{
     border: 2px solid rgba(204, 203, 200, 0.918);
     margin:40px;
     list-style: none;
+    flex:1;
+    align-items: center;
+ 
     
     
 }
@@ -148,7 +173,7 @@ p{
 .contact-info li {
     padding: 15px;
     margin:10px;
-   
+   font-size: 1.3rem;
 }
 
 /*services page*/
@@ -229,10 +254,11 @@ body.services h1 {
         border-radius: 5px;
         color:rgba(204, 203, 200, 0.918);
         padding: 20px;
-     
         margin: 0 auto;
         border: 2px solid rgba(204, 203, 200, 0.918);
         display:flex;
+        align-items: flex-start;
+        justify-content: space-between;
       }
 
       .wrapper-button {
@@ -276,36 +302,53 @@ body.services h1 {
 
       input[type="text"],
       textarea
-     
-      
        {
-      
+        background-color: rgba(204, 203, 200, 0.918);
         padding: 4px;
-        border: 2px solid rgb(235, 159, 206);
+        border: 2px solid rgb(49, 2, 30);
         border-radius: 4px;
         margin-top: 4px;
         margin-bottom: 4px;
+        margin-left: 10px;
         resize: vertical;
+       
       }
       
       input[type="email"] {
-       
+        background-color: rgba(204, 203, 200, 0.918);
         padding: 4px;
         border: 1px solid rgb(49, 2, 30);
         border-radius: 4px;
         margin-top: 4px;
         margin-bottom: 4px;
         resize: vertical;
+        margin-left: 3px;
       }
+      input[type="phone"] {
+        background-color: rgba(204, 203, 200, 0.918);
+        padding: 4px;
+        border: 1px solid rgb(49, 2, 30);
+        border-radius: 4px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        resize: vertical;
+        margin-left: 40px;
+      }
+
+      select
+      {
+        background-color: rgba(204, 203, 200, 0.918);
+        padding: 4px;
+        border: 1px solid rgb(49, 2, 30);
+        border-radius: 4px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        resize: vertical;
+        margin-left: 20px;
+
+      }
+
       
-      textarea {
-        font-family: sans-serif;
-      }
-      
-      fieldset {
-        margin-bottom: 16px;
-        border: 1px solid #ccc;
-      }
       
       .label-required {
         font-size: 0.8rem;
@@ -314,8 +357,9 @@ body.services h1 {
 
 label {
     color:rgba(204, 203, 200, 0.918);
-    
-    width:150px;
+    font-size: 1.5rem;
+   font-weight: bold;
+    padding: 10px;
     
 }
 
@@ -337,6 +381,9 @@ body.team h1 { text-decoration: underline;}
 .team p {
     font-size: 1.5rem;
     text-align:justify;
+    color:rgba(204, 203, 200, 0.918);
+
+   
 }
 
 .team {
@@ -362,7 +409,7 @@ body.team h1 { text-decoration: underline;}
     
 }
 
-/*why wont lannies border show*/
+/*why wont lannies border show-fixed*/
 .lannie {
     display: flex;
     flex:1;
@@ -385,14 +432,15 @@ body.team h1 { text-decoration: underline;}
 
 /* portfolio page start*/
 
-body.portfolio figcaption {
+.portfolio figcaption {
     font-size: 1rem;
     font-style: italic;
 }
 
-body.portfolio h2 {
+.portfolio h2 {
     font-size: 2.5rem;
     text-decoration: underline;
+    font-weight:bolder;
 }
 .hair {
     display: flex;
@@ -463,6 +511,9 @@ footer .wrapper {
        background-color: rgb(49, 2, 30);
        border-bottom: 4mm ridge rgb(49, 2, 30);
        opacity: 60%;
+       display: flex;
+     
+      
 }
 
 footer ul { 
@@ -470,13 +521,52 @@ footer ul {
     display:flex;
     justify-content: space-evenly;
     flex: 1 0 auto;
-    
+    font-size: 1.5rem;
+    align-items: center;
+    list-style: none
+ 
     
 }
+
+
+.social {
+    display:flex;
+    justify-content: space-evenly;
+    flex:1;
+    padding:30px;
+    align-items:center;
+}
+
+
+.social-icon {
+    color:rgba(204, 203, 200, 0.918);
+    transition: color 0.2s;
+   
+
+}
+
+footer p {
+    font-size: 0.5rem;
+    font-style: italic;
+  
+    padding:10px;
+   
+}
+
+
 /* footer end */ 
 
+@media only screen and (min-width: 1025px) { 
+    nav .menu-label {
+        display:none;
+    }
+    nav .toggle {
+        display:none;
+    }
+    }
 
-@media only screen and (min-width: 1000px) {
+
+@media only screen and (max-width: 667px) {
     
     .contact-info ul {
         display: flex;
@@ -491,20 +581,82 @@ footer ul {
     
   }
 /* email still doesnt fit for moblie */
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 1024px) {
     
     .contact-info ul {
         display: flex;
         justify-content: space-between;
         align-items: center;
         font-size: .8rem;
-       
-        
+        flex-wrap: wrap;
+        padding:0;
+        margin:0;
+          
     }
     
     .contact-info li {
-        flex: 1;
+        flex: 1 0 auto;
+        font-size: 0.5rem;
+        padding:0;
+        margin:0;
+        
         
     }
+
+.show-items {
+    display:flex;
+}
+nav .toggle {
+    align-self: flex-end;
+    position:absolute;
+    cursor:pointer;
+}
+
+nav ul {
+    flex-direction: column;
+    display: none;
+    flex: 1 0 60%;
+  
+}
+.branding {
+    flex-direction: column;
+    display:none;
+    flex: 1 0 40%;
+}
+nav {
+    display:flex;
+    flex-direction:column;
+    padding:20px;
+  
+}
+nav ul li a {
+    color:rgba(204, 203, 200, 0.918);
+}
+
+.menu-items {
+    color:rgba(204, 203, 200, 0.918);
+   display:none;
+
+}
+
+
+footer .wrapper {
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    flex: 1 0 auto;
     
+   
+}
+
+footer ul {
+    display:flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    flex-direction: column;
+
+}
+
+
   }
+

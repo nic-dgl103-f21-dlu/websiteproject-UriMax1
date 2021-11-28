@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&family=Roboto:wght@300;400;900&display=swap" rel="stylesheet"> <!--google font add-->
-</head>
-<body class="services">
-       <!--need to style nav -->
-    <nav> 
-        <a href="home.html"> Home </a>
-        <a href="services.html"> Services </a>
-        <a href="Team.html"> Team </a>
-        <a href="portfolio.html"> Portfolio </a>
-    </nav>  <!-- I decided to use all four menu options across the pages contrary to wireframs eliminating any current page link-->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&family=Roboto:wght@300;400;900&display=swap" rel="stylesheet"> <!--google font add-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body> 
+    <header id="split"> 
+        <div class="branding"> 
+        <figure> <img src="images/logo.jpg" alt="Cuttin Corners Logo" width="550"> </figure>
+    </div>
+    
+        <nav> 
+            <div class="menu-items">Menu</div>
+            <ul id="nav-items"> 
+           <li><a href="home.html"> Home </a> </li>
+           <li><a href="services.html"> Services </a> </li>
+           <li><a href="Team.html"> Team </a> </li>
+           <li><a href="portfolio.html"> Portfolio </a> </li>
+          
+        </ul>
+        <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a>
+    
+        </nav> 
+    
+    </header> 
+ <!-- I decided to use all four menu options across the pages contrary to wireframs eliminating any current page link-->
 
 <!--need to style lists-->
 <h1> Price List </h1>
@@ -89,6 +103,7 @@ action="https://learndigital.dev/programs/dgl103-form.php">
 
 <label for="Service"> Service </label>
 <select id="Service" name="Service">
+<option value="Please Choose"> Please Choose</option>
 <option value="Ladie's Haircut"> Ladie's Haircut </option>
 <option value="Men's Haircut"> Men's Haircut </option>
 <option value="Kid's Haircut"> Kid's Haircut </option>
@@ -124,8 +139,10 @@ action="https://learndigital.dev/programs/dgl103-form.php">
 </select>
 
 
+
 <label for="Stylist"> Stylist </label>
 <select id="Stylist" name="Stylist">
+    <option value="Please Choose"> Please Choose</option>
     <option value="Chloe Simms"> Chloe Simms </option>
     <option value="Lannie Brown"> Lannie Brown</option>
     <option value="Sophia Gardenia"> Sophia Gardenia </option>
@@ -137,10 +154,11 @@ action="https://learndigital.dev/programs/dgl103-form.php">
 <input type="date" name="mydate"
 id="myDate">
 
-
+<!--could not find a clear way on how to style date picker to  match rest of form!-->
 
 <label for="Time"> Time</label>
 <select id="Time" name="Time">
+<option value="Select Time"> Select Time </option>
 <option value="10 AM"> 10 AM </option> 
 <option value="11 AM"> 11 AM </option>
 <option value="12 PM"> 12 PM </option>
@@ -157,14 +175,14 @@ id="myDate">
 <input type="text" id="fname" name="firstname" placeholder="Ex: Julie"> 
 
 <label for="lname">Last Name</label>
-<input type="text" id="lname" name="lastname" placeholder="Ex: Wright"> <br>
-
-<label for="phone">Phone Number</label>
-<input type="phone" id="phone" name="phone" placeholder="Ex: 888-888-8888">
+<input type="text" id="lname" name="lastname" placeholder="Ex: Wright"> 
+<br>
+<label for="phone">Phone #</label> <!--changed to # from full word "number" as it was not lining up nicely and then adjusted margin lefts-->
+<input type="number" id="phone" name="phone" placeholder="Number">
 
 <label for="email">Email <span class="label-required">* (required)</span></label>
 <input type="email" id="email" name="email" placeholder="Ex: julie@hotmail.com" required>
-
+<br>
 
 <div class="wrapper-button">
     <input type="reset" value="Reset">
@@ -192,7 +210,7 @@ id="myDate">
 <figure> <img src="images/products-frontrow.jpg" alt="Front Row Products" width="200"> <figcaption> Front Row </figcaption> </figure>
 <figure> <img src="images/products-LABruket.jpeg" alt="L:A Bruket Products" width="200"> <figcaption> L:A Bruket </figcaption> </figure>
 <figure> <img src="images/products-Schwarzkpof.jpg" alt="Schwarzkpof Products"  height="300" width="200"> <figcaption>Schwarzkpof </figcaption> </figure>
-<figure> <img src="images/Products -Ouai.jpg" alt="Ouai Products" width="200"> <figcaption> Ouai </figcaption> </figure>
+<figure> <img src="images/Products-Ouai.jpg" alt="Ouai Products" width="200"> <figcaption> Ouai </figcaption> </figure>
 
 </div>
 
@@ -201,19 +219,36 @@ id="myDate">
     <div class="wrapper">
    
     <!-- need to figure out html and coding for footer as well as styling-->
-  
-    
+   
      <ul> 
-    <li>  Phone </li> 
-    <li> Email </li>
-    <li> Address </li> 
-    <!-- need to insert logo links and style-->
-<a href="https://www.facebook.com/Cuttin-Corners-hair-salon-1847674388625506/services/?ref=page_internal">facebook</a> 
-<a href="https://instagram.com/cuttincornersstettler?utm_medium=copy_link">instagram</a>
-
+    <li>  403-742-0007 </li> 
+    <li> cuttincornerstettler@gmail.com </li> 
+    <li> 4839 50 Stettler, AB Canada </li>  
 </ul>
+
+    <!-- need to insert logo links and style-->
+  <div class="social"> 
+<a class="social-icon" href="https://www.facebook.com/Cuttin-Corners-hair-salon-1847674388625506/services/?ref=page_internal"> <ion-icon name="logo-facebook"></ion-icon></a>
+
+<a class="social-icon" href="https://instagram.com/cuttincornersstettler?utm_medium=copy_link"><ion-icon name="logo-instagram"></ion-icon></a>
+
 </div>
+
+
+</div>
+<p> This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the class environment. None of the content and images were approved by the business owner</p>
 </footer>
+<!--had some challenges fitting paragraph in settled on under the footer background-->
+
+<script>
+    function showNav() {
+      var element = document.getElementById("nav-items");
+      element.classList.toggle("show-items");
+    }
+  </script> 
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   
 
 
 </body>
