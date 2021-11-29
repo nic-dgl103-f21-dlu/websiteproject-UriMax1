@@ -324,7 +324,7 @@ body.services h1 {
         resize: vertical;
         margin-left: 3px;
       }
-      input[type="phone"] {
+      input[type="number"] {
         background-color: rgba(204, 203, 200, 0.918);
         padding: 4px;
         border: 1px solid rgb(49, 2, 30);
